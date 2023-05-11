@@ -11,8 +11,8 @@ function savePlayersToFile(players: Array<Player>) {
 }
 
 function main() {
-  const player1 = generatePlayer(PlayerType.Patrick, "Manan");
-  const player2 = generatePlayer(PlayerType.Spongebob, "Mark");
+  const player1 = generatePlayer(PlayerType.Patrick, "user1");
+  const player2 = generatePlayer(PlayerType.Spongebob, "user2");
 
   const players = [player1, player2];
 
