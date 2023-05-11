@@ -24,6 +24,9 @@ dependencies:
     version: 8.10.0
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.1.2
+    version: 20.1.2
   typescript:
     specifier: ^4.5.2
     version: 4.9.5
@@ -557,7 +560,6 @@ packages:
 
   /@types/node@20.1.2:
     resolution: {integrity: sha512-CTO/wa8x+rZU626cL2BlbCDzydgnFNgc19h4YvizpTO88MFQxab8wqisxaofQJ/9bLGugRdWIuX/TbIs6VVF6g==}
-    dev: false
 
   /@types/qs@6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}

@@ -13,8 +13,10 @@
       "noImplicitThis": true,
       "alwaysStrict": true,
       "lib": ["es2015", "es2016", "es2017", "es2018", "es2019", "es2020", "es2021"],
+      "typeRoots": ["node_modules/@types", "src/@types"],
       "types": ["node"]
     },
-    "include": ["./src/**/*"],
-    "exclude": ["node_modules"]
+    "files": ["src/@types/graphql.d.ts"],
+    "include": ["src/**/*", "index.ts", "ConvertPlayerToJson.ts"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
   }  

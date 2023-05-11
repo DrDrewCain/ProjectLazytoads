@@ -15,14 +15,14 @@
  * 
  * I hope you enjoy the game!
  */
-enum PlayerType {
+export enum PlayerType {
   Warrior = "Warrior",
   Wizard = "Wizard",
   Patrick = "Patrick",
   Spongebob = "Spongebob",
 }
 
-interface Player {
+export interface Player {
   type: PlayerType;
   userName: string;
   health: number;
@@ -39,7 +39,7 @@ interface Player {
 
 const maxStrength = 100;
 
-function generatePlayer(type: PlayerType, userName: string): Player {
+export function generatePlayer(type: PlayerType, userName: string): Player {
   const health = 100;
   const strength = {
     might: Math.floor(Math.random() * 10) + 1,
@@ -64,11 +64,11 @@ function generatePlayer(type: PlayerType, userName: string): Player {
   return { type, userName, health, strength, likeness };
 }
 
-  function playGame(): void {
-    const Warrior = generatePlayer(PlayerType.Warrior, "Warrior");
-    const satan = generatePlayer(PlayerType.Wizard, "Wizard");
-    const lucifer = generatePlayer(PlayerType.Patrick, "Patrick");
-    const other = generatePlayer(PlayerType.Spongebob, "Spongebob");
+  export function playGame(): void {
+    // const Warrior = generatePlayer(PlayerType.Warrior, "Warrior");
+    // const satan = generatePlayer(PlayerType.Wizard, "Wizard");
+    // const lucifer = generatePlayer(PlayerType.Patrick, "Patrick");
+    // const other = generatePlayer(PlayerType.Spongebob, "Spongebob");
   
     let players: Player[] = [];
   

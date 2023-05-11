@@ -1,3 +1,5 @@
+import { Player, PlayerType, generatePlayer} from "./WarriorsWorld";
+
 function savePlayersToFile(players: Array<Player>) {
   const json = JSON.stringify(players, null, 2);
   const blob = new Blob([json], { type: "application/json" });
