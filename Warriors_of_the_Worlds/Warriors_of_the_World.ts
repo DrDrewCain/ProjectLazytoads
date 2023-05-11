@@ -169,7 +169,3 @@ function generatePlayer(type: PlayerType, userName: string): Player {
         console.log(`${name} - ${score}`);
       }
     }
-    
-    // Start the game
-    playGame();
-    
