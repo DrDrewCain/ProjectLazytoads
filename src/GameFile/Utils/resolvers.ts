@@ -1,9 +1,19 @@
 import { Strategy as LocalStrategy } from 'passport-local';
 import passport from 'passport';
 import jwt from 'jsonwebtoken';
-import { secretKey } from './config';
 import { Request, Response } from 'express';
 import { Session } from 'express-session';
+import dotenv from 'dotenv';
+dotenv.config();
+
+let secretKey = process.env.SECRET_KEY ?? "default-secret-key" ?? undefined;
+
+if (process.env.SECRET_KEY) {
+  secretKey = process.env.SECRET_KEY;
+} else {
+  console.error('SECRET_KEY is undefined');
+  process.exit(1); // exit the process with an error code
+}
 
 interface User {
   id: number;
@@ -19,6 +29,7 @@ passport.use(new LocalStrategy(async (username: string, password: string, done) 
     return done(null, false);
   }
 }));
+
 
 const resolvers = {
   Query: {
@@ -49,7 +60,7 @@ const resolvers = {
 
       // Generate a JWT token
       const token = jwt.sign({ id: user.id, username: user.username }, secretKey);
-
+      console.log(process.env.SECRET_KEY)
       return token;
     },
     logout: async (_: unknown, __: unknown, { req, res }: {req: Request, res: Response}) => {

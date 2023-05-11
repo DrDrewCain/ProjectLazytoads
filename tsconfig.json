@@ -17,6 +17,6 @@
       "types": ["node"]
     },
     "files": ["src/@types/graphql.d.ts"],
-    "include": ["src/**/*", "index.ts", "ConvertPlayerToJson.ts"],
+    "include": ["src/**/*", "index.ts", "ConvertPlayerToJson.ts", "src/GameFile/Utils/.config.ts"],
     "exclude": ["node_modules", "**/*.spec.ts"]
   }  
