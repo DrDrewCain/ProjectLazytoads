@@ -1,40 +1,43 @@
-const { ApolloServer } = require('apollo-server');
-const { makeExecutableSchema } = require('graphql');
-const { jsonfile } = require('jsonfile');
-const { connect } = require('pg');
+import { ApolloServer, gql } from 'apollo-server';
+import { makeExecutableSchema } from 'graphql-tools';
+import { jsonfile } from 'jsonfile';
+import { connect } from 'pg';
 
 // Load the JSON file
 const data = jsonfile.readFileSync('./players.json');
 
-// Create a GraphQL schema
-const schema = makeExecutableSchema({
-  typeDefs: `
-    type Query {
-      players: [Player]
-    }
-    
-    type Player {
-      id: Int
-      type: String
-      userName: String
-      health: Int
-      strength: {
-        might: Int
-        intelligence: Int
-        magic: Int
-        charisma: Int
-        luck: Int
-        badDogAttitude: Int
-      }
-      likeness: Boolean
-    }
-  `,
-  resolvers: {
-    Query: {
-      players: () => data.players
-    }
+// Define your type definitions
+const typeDefs = gql`
+  type Query {
+    players: [Player]
   }
-});
+    
+  type Player {
+    id: Int
+    type: String
+    userName: String
+    health: Int
+    strength: {
+      might: Int
+      intelligence: Int
+      magic: Int
+      charisma: Int
+      luck: Int
+      badDogAttitude: Int
+    }
+    likeness: Boolean
+  }
+`;
+
+// Define your resolvers
+const resolvers = {
+  Query: {
+    players: () => data.players
+  }
+};
+
+// Create the schema using makeExecutableSchema
+const schema = makeExecutableSchema({ typeDefs, resolvers });
 
 // Create a PostgreSQL connection
 const connection = connect('postgres://localhost:5432/mydb');

@@ -1,0 +1,21 @@
+{
+  "name": "warriors-of-the-world",
+  "version": "1.0.0",
+  "description": "A game about warriors from all over the world",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "apollo-server": "^3.12.0",
+    "express": "^4.17.1",
+    "graphql": "^14.7.0",
+    "graphql-tools": "^8.3.20",
+    "jsonfile": "^6.1.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
