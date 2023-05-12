@@ -24,3 +24,26 @@ Once you have installed Node.js, you can install Warriors of the World by follow
 Open a terminal window.
 Navigate to the directory where you want to install the game.
 Run the following command:
+
+## Usage
+
+To play Warriors of the World, follow these steps:
+
+1. Open a web browser and navigate to the game's website.
+2. Click the "Play" button.
+3. Select a civilization and a map.
+4. Click the "Start Game" button.
+
+## Known Issues
+
+* The game is still under development, so there may be some known issues.
+* If you encounter any issues, please report them to the project's issue tracker.
+
+## License
+
+Warriors of the World is licensed under the MIT License.
+
+## Contributors
+
+* Dr. Drew Cain
+* ['Mark']
