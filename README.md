@@ -30,7 +30,7 @@ To play Project lazytoad, follow these steps:
 
 ## License
 
-Warriors of the World is licensed under the MIT License.
+Lazyworld is licensed under the GNU version 3 License.
 
 ## Contributors
 
