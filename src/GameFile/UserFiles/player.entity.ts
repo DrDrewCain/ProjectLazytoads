@@ -4,6 +4,8 @@ enum PlayerType {
   MAGE = 'mage',
   WARRIOR = 'warrior',
   ROGUE = 'rogue',
+  SPONGEBOB = 'spongebob',
+  PATRICK = 'patrick',
 }
 
 @Entity({ name: 'players' })
@@ -19,6 +21,13 @@ export class Player {
   @Column()
   userName!: string;
 
+  @Column()
+  name?: string;
+
+  @Column()
+  score?: number;
+  
+  
   @Column()
   health!: number;
 
@@ -43,3 +52,5 @@ export class Player {
   @Column({ nullable: true })
   likeness?: boolean;
 }
+
+export default Player;

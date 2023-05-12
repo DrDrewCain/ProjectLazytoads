@@ -1,4 +1,4 @@
-import { playGame } from '../src/GameFile/WarriorsWorld';
+import { playGame } from './GameFile/mainFunctionality';
 
 function main() {
   playGame();

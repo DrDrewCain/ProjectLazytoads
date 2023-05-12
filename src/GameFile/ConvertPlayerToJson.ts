@@ -1,4 +1,4 @@
-import { Player, PlayerType, generatePlayer} from "./WarriorsWorld";
+import { Player, PlayerType, generatePlayer} from "./mainFunctionality";
 
 function savePlayersToFile(players: Array<Player>) {
   const json = JSON.stringify(players, null, 2);

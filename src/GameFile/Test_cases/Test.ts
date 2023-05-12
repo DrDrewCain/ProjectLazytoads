@@ -1,41 +1,36 @@
-// import { ApolloServer } from 'apollo-server-express';
-// import { createTestClient } from 'apollo-server-testing';
-// import { gql } from 'apollo-server';
-// import { pool } from '../db';
-// import resolvers from '../Utils/resolvers';
-// import typeDefs from '../schema';
+import { createConnection, Connection } from 'typeorm';
+import { Player } from '../UserFiles/player.Entity';
 
-// describe('resolvers', () => {
-//   let server;
-//   let query;
+describe('Player Entity', () => {
+  let connection: Connection;
 
-//   beforeAll(async () => {
-//     server = new ApolloServer({
-//       typeDefs,
-//       resolvers,
-//     });
-//     query = createTestClient(server).query;
-//     await pool.query('CREATE TABLE players (id SERIAL PRIMARY KEY, name TEXT, age INT)');
-//   });
+  beforeAll(async () => {
+    connection = await createConnection({
+      type: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'user',
+      password: 'password',
+      database: 'test',
+      entities: [Player],
+      synchronize: true,
+    });
+  });
 
-//   afterAll(async () => {
-//     await pool.query('DROP TABLE players');
-//     await pool.end();
-//   });
+  afterAll(async () => {
+    await connection.close();
+  });
 
-//   describe('players', () => {
-//     it('should return an array of players', async () => {
-//       const GET_PLAYERS = gql`
-//         query {
-//           players {
-//             id
-//             name
-//             age
-//           }
-//         }
-//       `;
-//       const { data } = await query({ query: GET_PLAYERS });
-//       expect(data.players).toEqual([]);
-//     });
-//   });
-// });
+  it('should insert a new player', async () => {
+    const player = new Player();
+    player.name = 'John Doe';
+    player.score = 100;
+
+    const result = await connection.manager.save(player);
+
+    expect(result).toBeDefined();
+    expect(result.id).toBeDefined();
+    expect(result.name).toBe('John Doe');
+    expect(result.score).toBe(100);
+  });
+});
