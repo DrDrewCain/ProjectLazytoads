@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="flex items-center justify-center w-full h-16 bg-max-w-5xl">
       <p className="text-max-w-5xl-600">
-        &copy; {currentYear} Lazytoads. All rights reserved @Mark.
+        &copy; {currentYear} Lazytoads.org. All rights reserved @Mark.
       </p>
     </footer>
   )
