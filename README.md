@@ -10,7 +10,7 @@ In-progress!
 <!-- Installation Guide-->
 
 Installation
-To install Warriors of the World, you will need the following:
+To install Lazytoads...., you will need the following:
 
 --- In Progress!
 
