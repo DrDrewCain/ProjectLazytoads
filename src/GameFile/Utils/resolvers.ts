@@ -1,7 +1,9 @@
 import { Strategy as LocalStrategy } from 'passport-local';
 import passport from 'passport';
 import jwt from 'jsonwebtoken';
-import { Request, Response } from 'express';
+import { Request, Response} from 'express';
+import { Player } from '../player.entity';
+import { appDataSource } from '../server';
 import { Session } from 'express-session';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -30,15 +32,12 @@ passport.use(new LocalStrategy(async (username: string, password: string, done) 
   }
 }));
 
-
-const resolvers = {
+const playerResolvers = {
   Query: {
-    players: () => {
-      // Add code to fetch players from the database
-      // For example, using a library like node-postgres:
-      // const { rows } = await pool.query('SELECT * FROM players');
-      // return rows;
-      return [];
+    players: async (_parent: any, _args: any, { connection }: any) => {
+      const playerRepo = connection.getRepository(Player);
+      const players = await playerRepo.find();
+      return players;
     },
   },
   Mutation: {
@@ -80,4 +79,4 @@ const resolvers = {
   },
 };
 
-export default resolvers;
+export default playerResolvers;
