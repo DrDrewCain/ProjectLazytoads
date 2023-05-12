@@ -1,9 +1,8 @@
-enum PlayerType {
-    MAGE = 'mage',
-    WARRIOR = 'warrior',
-    ROGUE = 'rogue',
-    SPONGEBOB = 'spongebob',
-    PATRICK = 'patrick',
-  }
-
-export default PlayerType;
+export enum playerType {
+  MAGE = 'mage',
+  WARRIOR = 'warrior',
+  ROGUE = 'rogue',
+  SPONGEBOB = 'spongebob',
+  PATRICK = 'patrick',
+  WIZARD = "Wizard"
+}

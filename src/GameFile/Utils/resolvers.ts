@@ -3,7 +3,6 @@ import passport from 'passport';
 import jwt from 'jsonwebtoken';
 import { Request, Response} from 'express';
 import { Player } from '../UserFiles/player.entity';
-import { appDataSource } from '../server';
 import { Session } from 'express-session';
 import dotenv from 'dotenv';
 dotenv.config();

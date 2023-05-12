@@ -1,8 +1,8 @@
-import { createConnection, Connection } from 'typeorm';
-import { Player } from '../UserFiles/player.Entity';
+import { EntityManager, createConnection } from 'typeorm';
+import { Player } from '../UserFiles/player.entity';
 
 describe('Player Entity', () => {
-  let connection: Connection;
+  let connection: EntityManager;
 
   beforeAll(async () => {
     connection = await createConnection({
@@ -26,11 +26,11 @@ describe('Player Entity', () => {
     player.name = 'John Doe';
     player.score = 100;
 
-    const result = await connection.manager.save(player);
+    await connection.save(player);
 
-    expect(result).toBeDefined();
-    expect(result.id).toBeDefined();
-    expect(result.name).toBe('John Doe');
-    expect(result.score).toBe(100);
+    expect(player).toBeDefined();
+    expect(player.id).toBeDefined();
+    expect(player.name).toBe('John Doe');
+    expect(player.score).toBe(100);
   });
 });

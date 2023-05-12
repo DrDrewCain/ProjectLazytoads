@@ -1,12 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, Unique } from 'typeorm';
+import { playerType } from './playerType';
 
-enum PlayerType {
-  MAGE = 'mage',
-  WARRIOR = 'warrior',
-  ROGUE = 'rogue',
-  SPONGEBOB = 'spongebob',
-  PATRICK = 'patrick',
-}
 
 @Entity({ name: 'players' })
 export class Player {
@@ -16,40 +10,40 @@ export class Player {
   id!: number;
 
   @Column()
-  type!: PlayerType;
+  type!: playerType;
 
-  @Column()
+  @Column( { type: 'string', nullable: false})
   userName!: string;
 
-  @Column()
+  @Column( { type: 'string', nullable: false})
   name?: string;
 
-  @Column()
+  @Column( { type: 'int', nullable: true})
   score?: number;
   
   
-  @Column()
+  @Column( { type: 'int', nullable: false})
   health!: number;
 
-  @Column()
+  @Column( { type: 'int', nullable: false})
   might!: number;
 
-  @Column()
+  @Column( { type: 'int', nullable: false})
   intelligence!: number;
 
-  @Column()
+  @Column({ type: 'int', nullable: false })
   magic!: number;
 
-  @Column()
+  @Column( { type: 'int', nullable: false})
   charisma!: number;
 
-  @Column()
+  @Column( { type: 'int', nullable: false})
   luck!: number;
 
-  @Column()
+  @Column( { type: 'int', nullable: false})
   badDogAttitude!: number;
 
-  @Column({ nullable: true })
+  @Column({ type: 'boolean', nullable: true })
   likeness?: boolean;
 }
 
