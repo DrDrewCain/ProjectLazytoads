@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 0, 68, 102;
   --background-end-rgb: 153, 230, 179;
-  --surprise-tint: rgba(255, 174, 0, 0.4);
+  --surprise-tint: rgba(241, 189, 78, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {

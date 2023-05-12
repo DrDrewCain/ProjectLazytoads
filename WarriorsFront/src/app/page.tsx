@@ -12,7 +12,7 @@ const Home = () => {
           <p className="text-black text-lg mb-10">
             Currently working hard to bring you the best website possible. Release: 2024
           </p>
-          <p className="fixed left-0 top-0 w-full justify-center border-b border-max-w-5xl-300 bg-max-w-5xl bg-opacity-50 pb-6 pt-8 backdrop-blur-3xl text-black font-bold tracking-wider lg:static lg:mx-auto lg:rounded-xl lg:border lg:max-w-5xly-200 lg:p-4 lg:dark:bg-zinc-800/30 lg:text-center">
+          <p className="fixed left-0 top-0 w-full justify-center border-b border-gray-300 bg-max-w-5xl bg-opacity-50 pb-6 pt-8 backdrop-blur-3xl text-max-w-5xl font-bold tracking-wider lg:static lg:mx-auto lg:rounded-xl lg:border lg:max-w-5xly-200 lg:p-4 lg:dark:bg-max-w-5xl lg:text-center">
             DEVELOPMENT IN PROGRESS..... LAZYTOADS ARE WORKING ON IT
           </p>
         </div>
@@ -23,7 +23,6 @@ const Home = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Home;
