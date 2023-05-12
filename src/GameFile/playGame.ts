@@ -7,19 +7,8 @@ import { playerType } from "./UserFiles/playerType";
 /**
  * Here are the instructions on how to play the game:
  * @author Mark
+ * 
  * YOU MAY NOT COPY THIS GAME WITHOUT EXPLICIT AUTHORIZATION FROM THE AUTHOR.
- * 
- * 1. Enter your userName.
- * 
- * 2. Choose your character. You can either be Warrior or WIZARD. The game will keep prompting you until you enter a valid character.
- * 
- * 3. Answer the question "Is Warrior stronger than WIZARD and his minions?" with either "yes" or "no".
- * 
- * 4. Guess a number between 1 and 100. The computer will generate a random number between 1 and 100.
- * 
- * 5. If your guess is equal to the random number and you answered the question correctly, you win! Otherwise, you lose.
- * 
- * I hope you enjoy the game!
  */
 
 export function playGame() {
