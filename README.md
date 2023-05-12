@@ -1,7 +1,7 @@
-# Warriors_Of_The_World
+# Project Lazytoad
  A TypeScript game I made for fun
 <!-- DESCRIPTION -->
-Warriors of the World is a turn-based strategy game where players control characters of warriors from different cultures and civilizations. The goal of the game is to defeat your opponents in battle.
+Project Lazytoad is an upcoming turn-based strategy game where players control characters of warriors from different cultures and civilizations. The goal of the game is to defeat your opponents in battle.
 
 # Features
 <!-- FEATURES-->
@@ -16,7 +16,7 @@ To install Warriors of the World, you will need the following:
 
 ## Usage
 
-To play Warriors of the World, follow these steps:
+To play Project lazytoad, follow these steps:
 
 1. Open a web browser and navigate to the game's website.
 2. Click the "Play" button.
