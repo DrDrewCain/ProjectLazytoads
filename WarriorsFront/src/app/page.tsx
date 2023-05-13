@@ -34,6 +34,12 @@ const Home = () => {
             <li>
               <a href="/contactMe">Contact</a>
             </li>
+            <li>
+              <a href="/TestGame">Play</a>
+            </li>
+            <li>
+              <a href="/source">Source</a>
+            </li>
           </ul>
         </nav>
       </header>
