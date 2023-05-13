@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer";
 
 const homePage = () => {
   return (
@@ -52,7 +51,6 @@ const homePage = () => {
           </p>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
