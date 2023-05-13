@@ -1,15 +1,30 @@
-import React from 'react'
+import React from 'react';
 
-function Footer() {
-  const currentYear = new Date().getFullYear()
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex items-center justify-center w-full h-16 bg-max-w-5xl">
-      <p className="text-max-w-5xl-600">
+    <footer className="bg-black text-white py-2 px-1 sm:px-2 flex flex-col items-center justify-center">
+      <p className="text-white text-base mb-6 font-bold"
+      style={{
+        backgroundImage: "linear-gradient(to right, teal, purple)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}>
         &copy; {currentYear} Lazytoads.org. All rights reserved.
       </p>
+      <p className="text-base"
+      style={{
+        backgroundImage: "linear-gradient(to right, teal, purple)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}>
+        <a href="/contact">Contact Us</a>
+      </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
