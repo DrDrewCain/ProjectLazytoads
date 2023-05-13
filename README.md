@@ -33,6 +33,5 @@ Lazyworld is licensed under the GNU version 3 License.
 
 ## Contributors
 
-* Dr. Drew Cain
-* 'Mark'
+* Dr. Drew Cain (Mark)
 * 'Manan'
