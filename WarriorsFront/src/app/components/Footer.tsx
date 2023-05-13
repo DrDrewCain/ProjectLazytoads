@@ -4,11 +4,11 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-full text-center text-gray-600 text-sm mt-10">
-    <p className="text-center">
-      &copy; {new Date().getFullYear()} Lazytoads. All rights reserved.
-    </p>
-  </footer>
+    <footer className="flex items-center justify-center w-full h-16 bg-max-w-5xl">
+      <p className="text-max-w-5xl-600">
+        &copy; {currentYear} Lazytoads.org. All rights reserved @ Mark, <> Manan, <> Winnie</></>.
+      </p>
+    </footer>
   )
 }
 
