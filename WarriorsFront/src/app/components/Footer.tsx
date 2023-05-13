@@ -21,7 +21,6 @@ const Footer = () => {
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}>
-        <a href="/contact">Contact Us</a>
       </p>
     </footer>
   );
