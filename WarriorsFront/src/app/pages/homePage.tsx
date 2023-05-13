@@ -1,7 +1,6 @@
 import React from "react";
-import Footer from "./components/Footer";
 
-const Home = () => {
+const homePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="bg-gradient-to-r from-teal-500 to-purple-500 flex-1 py-20">
@@ -52,9 +51,8 @@ const Home = () => {
           </p>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default homePage;
