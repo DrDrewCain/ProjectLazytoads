@@ -26,3 +26,14 @@ body {
     ),
     var(--surprise-tint);
 }
+
+footer {
+  background-color: transparent;
+}
+
+footer p {
+  background-image: linear-gradient(to right, teal, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
