@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/home.module.css";
 import Navigation from "../components/Navigation";
-
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -21,6 +21,7 @@ const Home = () => {
           <p>We are planning to release our website in 2024. Stay tuned for more updates!</p>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
