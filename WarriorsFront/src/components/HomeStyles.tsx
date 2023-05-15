@@ -1,9 +1,11 @@
 import React from "react";
-import Footer from "./components/Footer";
+import Footer from "./Footer";
 
-const Home = () => {
-  return (
-    
+import { useRouter } from "next/router";
+
+const HomeStyles: React.FC = () => {
+    const router = useRouter();
+    return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-gradient-to-r from-teal-500 to-purple-500">
         <nav className="max-w-5xl mx-auto flex justify-between items-center py-4 px-8 lg:px-12">
@@ -26,19 +28,13 @@ const Home = () => {
             WebkitTextFillColor: "transparent",
           }}>
             <li>
-              <a href="/">Home</a>
+              <a onClick={() => router.push("/")}>Home</a>
             </li>
             <li>
-              <a href="/aboutMe">About</a>
+              <a onClick={() => router.push("/about")}>About</a>
             </li>
             <li>
-              <a href="/contactMe">Contact</a>
-            </li>
-            <li>
-              <a href="/TestGame">Play</a>
-            </li>
-            <li>
-              <a href="/source">Source</a>
+              <a onClick={() => router.push("/contact")}>Contact</a>
             </li>
           </ul>
         </nav>
@@ -94,5 +90,4 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
+export default HomeStyles;

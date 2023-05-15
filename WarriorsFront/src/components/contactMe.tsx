@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const contactMe: React.FC = () => {
   return (
@@ -18,13 +19,13 @@ const contactMe: React.FC = () => {
           </h1>
           <ul className="flex space-x-4 text-white font-semibold">
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
