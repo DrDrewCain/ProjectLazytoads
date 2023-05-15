@@ -17,6 +17,7 @@ const Navigation = () => {
         <li className={styles.navItem}>
           <Link href='/contact'>contact</Link>
         </li>
+        <li className={styles.navItem}><Link href='/page'>page</Link></li>
       </ul>
     </nav>
   );
