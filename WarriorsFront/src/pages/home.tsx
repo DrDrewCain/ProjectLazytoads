@@ -7,6 +7,9 @@ const Home = () => {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.heading}>Lazytoads</h1>
+        <nav className={styles.nav}>
+          <Navigation />
+        </nav>
       </header>
       <main className={styles.content}>
         <section className={styles.section}>
@@ -18,11 +21,6 @@ const Home = () => {
           <p>We are planning to release our website in 2024. Stay tuned for more updates!</p>
         </section>
       </main>
-      <footer>
-        <nav className={styles.nav}>
-          <Navigation />
-        </nav>
-      </footer>
     </div>
   );
 };

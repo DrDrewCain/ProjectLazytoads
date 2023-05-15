@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from "../styles/home.module.css";
 
@@ -6,21 +7,15 @@ const Navigation = () => {
 
   return (
     <nav className={styles.nav}>
-      <ul>
+      <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <div className={styles.navButtonContainer}>
-            <button className={styles.navButton} onClick={() => router.push('/home')}>Home</button>
-          </div>
+          <Link href='/home'>Home</Link>
         </li>
         <li className={styles.navItem}>
-          <div className={styles.navButtonContainer}>
-            <button className={styles.navButton} onClick={() => router.push('/about')}>About</button>
-          </div>
+          <Link href='/about'>About</Link>
         </li>
         <li className={styles.navItem}>
-          <div className={styles.navButtonContainer}>
-            <button className={styles.navButton} onClick={() => router.push('/contact')}>Contact</button>
-          </div>
+          <Link href='/contact'>contact</Link>
         </li>
       </ul>
     </nav>
