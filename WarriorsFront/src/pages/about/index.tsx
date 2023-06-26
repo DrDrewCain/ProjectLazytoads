@@ -21,14 +21,25 @@ const AboutMe: React.FC = () => {
                 />
               </div>
               <div className="profile-details">
-                <h3 className="text-2xl font-bold">Mark Sturman</h3>
-                <p className="text-base text-gray-700">
+                <h3 className="text-black text-base text-left border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider rounded-xl"
+              style={{
+                backgroundImage: "linear-gradient(to right, teal, purple)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>Mark Sturman</h3>
+                <p className="text-black text-base text-left border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider"
+              style={{
+                backgroundImage: "linear-gradient(to right, teal, purple)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}>
                   Full-stack Developer | Passionate about building things
                 </p>
               </div>
             </div>
             <p
-              className="text-black text-base text-center border-b border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider rounded-xl"
+              className="text-black text-base text-left border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider rounded-xl"
               style={{
                 backgroundImage: "linear-gradient(to right, teal, purple)",
                 WebkitBackgroundClip: "text",
@@ -40,7 +51,7 @@ const AboutMe: React.FC = () => {
               repository of sorts for whatever we end up building. We are all
               aspiring full-stack developers.{" "}
               <span className="profile-link">
-              Hey! I&apos;m a full-stack developer and I love to build things.
+               I&apos;m a full-stack developer and I love to build things.
               I&apos;m currently working on a few projects, including this one.
               I&apos;m passionate about learning new things and I&apos;m always
               looking for new opportunities. I&apos;m currently looking for a
