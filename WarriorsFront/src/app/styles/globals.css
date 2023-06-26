@@ -186,7 +186,7 @@ footer p {
 
 .carousel-text {
   white-space: nowrap;
-  animation: carouselAnimation 10s linear infinite;
+  animation: carouselAnimation 20s linear infinite;
   transform: translateX(0); /* Start centered */
 }
 
