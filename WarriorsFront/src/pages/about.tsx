@@ -1,33 +1,11 @@
 import React from "react";
+import Navigation from "../app/components/Navigation";
 
  const aboutMe: React.FC = () => {
    return (
      <div className="flex flex-col min-h-screen">
        <header className="bg-gradient-to-r from-teal-500 to-purple-500">
-         <nav className="max-w-5xl mx-auto flex justify-between items-center py-4 px-8 lg:px-12">
-           <h1
-             className="text-white text-xl font-bold tracking-wider font-italic"
-             style={{
-               backgroundImage: "linear-gradient(to right, teal, purple)",
-               WebkitBackgroundClip: "text",
-               backgroundClip: "text",
-               WebkitTextFillColor: "transparent",
-             }}
-           >
-             Lazytoads
-           </h1>
-           <ul className="flex space-x-4 text-white font-semibold">
-             <li>
-               <a href="/">Home</a>
-             </li>
-             <li>
-               <a href="/about">About</a>
-             </li>
-             <li>
-               <a href="/contact">Contact</a>
-             </li>
-           </ul>
-         </nav>
+        <Navigation/>
        </header>
 
        <main className="bg-gray-100 flex-1 py-10">

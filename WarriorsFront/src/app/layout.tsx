@@ -1,22 +1,25 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import React, { useEffect } from 'react';
+import './styles/globals.css';
+import { Inter } from 'next/font/google';
+import Navigation from './components/Navigation';
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Project Lazytoad',
-  description: 'Creating a better future for the lazy toads',
-  
-}
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
+  useEffect(() => {
+    const root = document.getElementById('root')!;
+    // Add your navigation content here
+  }, []);
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+    <>
+      <div id="root" className={inter.className}>
+      </div>
+      {children}
+    </>
+  );
 }
