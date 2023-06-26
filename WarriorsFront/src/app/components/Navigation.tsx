@@ -7,15 +7,20 @@ const Navigation = () => {
 
   const isContactPage = router.pathname === '/contact';
 
+  const handleSourceClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    router.push('https://github.com/DrDrewCain/ProjectLazytoads');
+  };
+
   return (
     <nav className="max-w-5xl mx-auto flex justify-between items-center py-4 px-8 lg:px-12">
       <h1
         className="text-white text-xl font-bold tracking-wider font-italic"
         style={{
-          backgroundImage: "linear-gradient(to right, teal, purple)",
-          WebkitBackgroundClip: "text",
-          backgroundClip: "text",
-          WebkitTextFillColor: "transparent",
+          backgroundImage: 'linear-gradient(to right, teal, purple)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
         }}
       >
         Lazytoads
@@ -23,10 +28,10 @@ const Navigation = () => {
       <ul
         className="max-w-5xl mx-auto flex justify-between items-center py-4 px-8 lg:px-12"
         style={{
-          backgroundImage: "linear-gradient(to right, teal, purple)",
-          WebkitBackgroundClip: "text",
-          backgroundClip: "text",
-          WebkitTextFillColor: "transparent",
+          backgroundImage: 'linear-gradient(to right, teal, purple)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
         }}
       >
         <li>
@@ -49,6 +54,11 @@ const Navigation = () => {
               Contact
             </Link>
           )}
+        </li>
+        <li>
+          <a href="#" onClick={handleSourceClick}>
+            Source
+          </a>
         </li>
       </ul>
     </nav>
