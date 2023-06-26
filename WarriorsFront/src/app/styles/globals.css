@@ -209,3 +209,32 @@ footer p {
     transform: translateX(0); /* Move back to the center */
   }
 }
+/* Add more media queries for other screen sizes as needed */
+
+.profile-details {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-details h3 {
+  white-space: nowrap;
+  animation: snakingAnimation .1ms linear infinite;
+}
+
+@keyframes snakingAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
