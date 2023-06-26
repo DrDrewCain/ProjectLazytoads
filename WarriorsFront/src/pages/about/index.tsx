@@ -1,6 +1,8 @@
 import React from "react";
 import Navigation from "../../app/components/Navigation";
 import RootLayout from "../../app/layout";
+import Image from "next/image";
+
 const AboutMe: React.FC = () => {
   return (
     <RootLayout>
@@ -14,11 +16,13 @@ const AboutMe: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4"></h2>
             <div className="profile-card">
               <div className="profile-image small">
-                <img
-                  src="./images/msturman.jpg"
-                  alt="Profile"
-                  className="rounded-full"
-                />
+              <Image
+                src="/images/msturman.jpg"
+                alt="Profile"
+                className="rounded-full"
+                width={150}
+                height={150}
+              />
               </div>
               <div className="profile-details">
                 <h3 className="text-black text-base text-left border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider rounded-xl"
