@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
                 backgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}>
-                  Full-stack Developer | Passionate about building things
+                  Full-stack Developer | Passionate about building things | Ex-Chief
                 </p>
               </div>
             </div>
@@ -51,9 +51,6 @@ const AboutMe: React.FC = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Hey! This is a fun project developed by Mark and friends -- a
-              repository of sorts for whatever we end up building. We are all
-              aspiring full-stack developers.{" "}
               <span className="profile-link">
                I&apos;m a full-stack developer and I love to build things.
               I&apos;m currently working on a few projects, including this one.
