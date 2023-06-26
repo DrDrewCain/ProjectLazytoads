@@ -27,17 +27,17 @@ const Navigation = () => {
       }}>
         <li>
           <Link href="/" passHref>
-            <span className={router.pathname === '/' ? 'active' : ''}>Home</span>
+            Home
           </Link>
         </li>
         <li>
           <Link href="/about" passHref>
-            <span className={router.pathname === '/about' ? 'active' : ''}>About</span>
+            About
           </Link>
         </li>
         <li>
           <Link href="/contact" passHref>
-            <span className={router.pathname === '/contact' ? 'active' : ''}>Contact</span>
+            Contact
           </Link>
         </li>
       </ul>

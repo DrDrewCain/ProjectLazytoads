@@ -2,10 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-    const router = useRouter();
-    const isRootPage = router.pathname === '/';
-  
+const MyApp = ({ Component, pageProps }: AppProps) => {  
     return (
       <>
         <Component {...pageProps} />
