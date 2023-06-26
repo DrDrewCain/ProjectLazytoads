@@ -178,3 +178,34 @@ footer p {
 }
 
 /* Add more media queries for other screen sizes as needed */
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-text {
+  white-space: nowrap;
+  animation: carouselAnimation 10s linear infinite;
+  transform: translateX(0); /* Start centered */
+}
+
+.carousel-animation {
+  display: inline-block;
+  padding-right: 200%; /* Ensure text moves from left to right */
+}
+
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(0); /* Start centered */
+  }
+  25% {
+    transform: translateX(-40%); /* Move to the left side */
+  }
+  75% {
+    transform: translateX(100%); /* Move to the right side */
+  }
+  100% {
+    transform: translateX(0); /* Move back to the center */
+  }
+}
