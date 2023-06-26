@@ -26,6 +26,7 @@ body {
     ),
     var(--surprise-tint);
 }
+
 nav {
   max-width: 5xl;
   margin: 0 auto;
@@ -60,6 +61,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
 footer {
   background-color: transparent;
 }
@@ -83,3 +85,100 @@ footer p {
   height: 150px;
   border-radius: 50%;
 }
+
+/* Responsive Styles */
+
+@media (max-width: 640px) {
+  /* Styles for mobile devices */
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  nav ul li a:hover {
+    text-decoration: none;
+  }
+
+  footer {
+    padding: 0.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .rounded-full {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Responsive Styles */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Styles for tablet devices */
+  nav {
+    /* Tablet nav styles */
+    padding: 0 1rem;
+  }
+
+  nav h1 {
+    /* Tablet nav h1 styles */
+    font-size: 1.25rem;
+  }
+
+  nav ul {
+    /* Tablet nav ul styles */
+    gap: 0.5rem;
+  }
+
+  nav ul li a {
+    /* Tablet nav ul li a styles */
+    font-size: 0.875rem;
+  }
+
+  nav ul li a:hover {
+    /* Tablet nav ul li a:hover styles */
+    text-decoration: none;
+  }
+
+  footer {
+    /* Tablet footer styles */
+    padding: 1rem;
+  }
+
+  header h1 {
+    /* Tablet header h1 styles */
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    /* Tablet footer p styles */
+    font-size: 0.875rem;
+  }
+
+  .rounded-full {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Add more media queries for other screen sizes as needed */
