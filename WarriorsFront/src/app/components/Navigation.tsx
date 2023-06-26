@@ -18,26 +18,26 @@ const Navigation = () => {
       >
         Lazytoads
       </h1>
-      <ul className="text-white text-xl font-bold tracking-wider font-italic"
-              style={{
-                backgroundImage: "linear-gradient(to right, teal, purple)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}>
+      <ul className="max-w-5xl mx-auto flex justify-between items-center py-4 px-8 lg:px-12"
+       style={{
+        backgroundImage: "linear-gradient(to right, teal, purple)",
+        WebkitBackgroundClip: "text",
+        backgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}>
         <li>
-          <Link href="/home" passHref>
-            Home
+          <Link href="/" passHref>
+            <span className={router.pathname === '/' ? 'active' : ''}>Home</span>
           </Link>
         </li>
         <li>
           <Link href="/about" passHref>
-            About
+            <span className={router.pathname === '/about' ? 'active' : ''}>About</span>
           </Link>
         </li>
         <li>
           <Link href="/contact" passHref>
-             Contact
+            <span className={router.pathname === '/contact' ? 'active' : ''}>Contact</span>
           </Link>
         </li>
       </ul>
