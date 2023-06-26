@@ -1,28 +1,27 @@
 import React from "react";
-import styles from "../styles/home.module.css";
-import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Navigation from "@/components/Navigation";
+import RootLayout from "../components/layout";
+import styles from "../styles/home.module.css";
+
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        <h1 className={styles.heading}>Lazytoads</h1>
-        <nav className={styles.nav}>
-          <Navigation />
-        </nav>
-      </header>
-      <main className={styles.content}>
-        <section className={styles.section}>
-          <h2>Currently working hard to bring you the best website possible.</h2>
-          <p>We are currently working hard to bring you the best website possible. Please check back soon!</p>
-        </section>
-        <section className={styles.section}>
-          <h2>Releasing: 2024</h2>
-          <p>We are planning to release our website in 2024. Stay tuned for more updates!</p>
-        </section>
+      <><Navigation /><div className={styles.flexContainer}>
+      <main className={`${styles.main} ${styles.gradientBackground} ${styles.py20}`}>
+        <div className={`${styles.contentContainer} ${styles.textCenter}`}>
+          <p className={`${styles.textWhite} ${styles.textBase} ${styles.mb6} ${styles.gradientText}`}>
+            Currently working hard to bring you the best website possible.
+          </p>
+          <p className={`${styles.textWhite} ${styles.textBase} ${styles.mb6} ${styles.fontBold} ${styles.gradientText}`}>
+            Releasing: 2024
+          </p>
+          <p className={`${styles.textBlack} ${styles.textBase} ${styles.textCenter} ${styles.borderBottom} ${styles.bgWhite} ${styles.bgOpacity50} ${styles.pb6} ${styles.pt8} ${styles.backdropBlur} ${styles.fontBold} ${styles.trackingWider} ${styles.roundedXL} ${styles.gradientText}`}>
+            DEVELOPMENT IN PROGRESS..... LAZYTOADS ARE WORKING ON IT
+          </p>
+        </div>
       </main>
       <Footer />
-    </div>
+    </div></>
   );
 };
 
