@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../app/components/Footer";
 import RootLayout from "../app/layout";
-import Head from "next/head"
 import Navigation from "../app/components/Navigation";
 
 const Home = () => {
