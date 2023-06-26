@@ -19,6 +19,6 @@
     "types": ["node", "jest"]
   },
   "files": ["src/@types/graphql.d.ts"],
-  "include": ["src/**/*", "index.ts", "ConvertPlayerToJson.ts", "src/GameFile/Utils/.config.ts"],
+  "include": ["src/**/*", "index.ts", "ConvertPlayerToJson.ts", "../warriorsbackend/src/GameFile/Utils/.config.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

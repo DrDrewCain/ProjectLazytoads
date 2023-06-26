@@ -1,6 +1,6 @@
-import { playGame } from './GameFile/playGame';
+import { playGame } from '../../warriorsbackend/src/GameFile/playGame';
 
-import { appDataSource } from "./GameFile/serverStarter";
+import { appDataSource } from "../../warriorsbackend/src/GameFile/serverStarter";
 appDataSource.initialize().then(() => {
 console.log("Data Source has been initialized!");}).catch((err) => {
 console.error("Error during Data Source initialization", err);});

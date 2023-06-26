@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../app/components/Navigation";
-import RootLayout from "../app/layout";
+import Navigation from "../../app/components/Navigation";
+import RootLayout from "../../app/layout";
 
 const contactMe: React.FC = () => {
   return (
