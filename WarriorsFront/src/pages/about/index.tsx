@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
 
       <main className="bg-gray-100 flex-1 py-10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
+          <h2 className="text-3xl font-bold mb-4"></h2>
           <p
             className="text-black text-base text-center border-b border-gray-300 bg-white bg-opacity-50 pb-6 pt-8 backdrop-blur-2xl font-bold tracking-wider rounded-xl"
             style={{
@@ -22,14 +22,13 @@ const AboutMe: React.FC = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            This is some information about our company. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            Hey! I'm a full-stack developer and I love to build things. I'm
+            currently working on a few projects, including this one. I'm
+            passionate about learning new things and I'm always looking for new
+            opportunities. I'm currently looking for a full-time position as a
+            software engineer. If you're interested in working with me, please
+            reach out to me on LinkedIn or send me an email @ mark@lazytoads.org
+            
           </p>
         </div>
       </main>
