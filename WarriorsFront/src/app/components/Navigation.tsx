@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import styles from '../styles/globals.css';
 
 const Navigation = () => {
   const router = useRouter();
