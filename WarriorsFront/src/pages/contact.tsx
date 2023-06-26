@@ -1,8 +1,10 @@
 import React from "react";
 import Navigation from "../app/components/Navigation";
+import RootLayout from "../app/layout";
 
 const contactMe: React.FC = () => {
   return (
+    <RootLayout>
     <div className="flex flex-col min-h-screen">
       <header className="bg-gradient-to-r from-teal-500 to-purple-500">
       <Navigation />
@@ -62,6 +64,7 @@ const contactMe: React.FC = () => {
         </div>
       </main>
     </div>
+    </RootLayout>
   );
 };
 
