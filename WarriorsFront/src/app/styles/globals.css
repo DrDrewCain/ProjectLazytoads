@@ -218,7 +218,7 @@ footer p {
 
 .profile-details h3 {
   white-space: nowrap;
-  animation: snakingAnimation 20s linear infinite;
+  animation: snakingAnimation 7s linear infinite;
 }
 
 @keyframes snakingAnimation {
