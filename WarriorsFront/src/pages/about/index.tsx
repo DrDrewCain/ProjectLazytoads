@@ -72,7 +72,7 @@ const AboutMe: React.FC = () => {
                 >
                   LinkedIn
                 </a>{" "}
-                or send me a message on the contact page.
+                or head over to the{" Contact Me"} page.
               </span>
             </p>
           </div>
