@@ -49,19 +49,18 @@ nav h1 {
 
 nav ul {
   display: flex;
+  justify-content: center; /* Add this line */
   gap: 1rem;
   color: white;
   font-weight: 600;
 }
 
-nav ul li a {
-  color: white;
-}
-
-nav ul li a:hover {
+.clicked-link {
+  /* Define the styles for the clicked link */
+  /* For example, change the color or apply an underline */
+  color: red;
   text-decoration: underline;
 }
-
 footer {
   background-color: transparent;
 }
@@ -237,4 +236,11 @@ footer p {
   100% {
     transform: translateX(0);
   }
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(to right, black, stone 500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

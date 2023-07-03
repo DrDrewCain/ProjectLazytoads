@@ -15,15 +15,6 @@ const Footer = () => {
       }}>
         &copy; {currentYear} Lazytoads.org. All rights reserved.
       </p>
-      <p className="text-sm sm:text-base"
-      style={{
-        color: "white",
-        background: "linear-gradient(to right, teal, purple)",
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }}>
-      </p>
     </footer>
   );
 };
