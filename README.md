@@ -1,5 +1,5 @@
 # Project Lazytoad
- A TypeScript game in-development for fun
+ A TypeScript game in-development for fun -- IN HEAVY PROGRESS
 <!-- DESCRIPTION -->
 Project Lazytoad is an upcoming turn-based strategy game where players control characters of warriors from different cultures and civilizations. The goal of the game is to defeat your opponents in battle.
 
