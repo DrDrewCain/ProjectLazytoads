@@ -12,11 +12,7 @@ import { playerType } from "./UserFiles/playerType";
  */
 
 export function playGame() {
-  // const Warrior = generatePlayer(playerType.Warrior, "Warrior");
-    // const satan = generatePlayer(playerType.WIZARD, "WIZARD");
-    // const lucifer = generatePlayer(playerType.Patrick, "Patrick");
-    // const other = generatePlayer(playerType.Spongebob, "Spongebob");
-  
+
     let players: playerBase[] = [];
   
     const player1 = prompt("Player 1, choose your character: Warrior, WIZARD, Patrick, or Spongebob")?.toLowerCase() ?? null;
@@ -99,6 +95,7 @@ export function playGame() {
       }
       addLeaderboard(players);
     }
+    
 
 export { Player };
 

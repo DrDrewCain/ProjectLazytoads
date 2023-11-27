@@ -11,6 +11,7 @@ export class Player {
 
   @Column()
   type!: playerType;
+  type_2!: playerType.AI | playerType.Human;
 
   @Column( { type: 'string', nullable: false})
   userName!: string;

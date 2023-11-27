@@ -1,5 +1,5 @@
-import { gql } from 'apollo-server';
-const typeDefs = gql`
+import { qql } from '@apollo/server';
+const typeDefs = qql`
   type Query {
     players: [Player]
   }

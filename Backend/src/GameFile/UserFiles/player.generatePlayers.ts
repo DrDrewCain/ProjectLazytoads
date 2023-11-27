@@ -1,5 +1,6 @@
 import { playerBase } from "./playerBase";
 import {playerType } from "./playerType";
+
 export function generatePlayer(type: playerType, userName: string): playerBase {
   let maxStrength = 100;
   const health = 100;

@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn, getConnection } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, Connection, } from 'typeorm';
+import { appDataSource } from '../serverStarter';
 
 @Entity()
 export class Score {
@@ -12,8 +13,7 @@ export class Score {
   score?: number;
 
   public static async saveHighScore(playerId: number, score: number): Promise<void> {
-    const connection = getConnection();
-    const scoreRepository = connection.getRepository(Score);
+    const scoreRepository = appDataSource.connection(Score);
     const existingScore = await scoreRepository.findOne({ where: { playerId } });
 
     if (existingScore) {

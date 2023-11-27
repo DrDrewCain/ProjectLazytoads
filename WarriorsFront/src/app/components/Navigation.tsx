@@ -25,7 +25,7 @@ const Navigation = () => {
           Lazytoads
         </h1>
       </div>
-      <ul className="flex justify-center items-center space-x-4 py-4">
+      <ul className="flex justify-center items-center space-x-4 py-5">
         <li>
           <Link href="/" passHref>
             <button className="text-black hover:text-gray-500" type="button">
